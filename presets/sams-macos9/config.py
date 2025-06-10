@@ -1,3 +1,4 @@
+WEB_SIMULATOR_PROMPT_ADDENDUM = ""
 WHITELISTED_DOMAINS = [
 	"weather.gov",
 	"notyoutube.com",
