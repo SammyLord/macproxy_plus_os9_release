@@ -2,13 +2,13 @@
 # HINT: WebSimulator is not associated with or endorsed by WebSim.
 
 from flask import request, render_template_string
-import anthropic
+from openai import OpenAI
 import config
 import importlib.util
 import os
 from urllib.parse import urlparse, parse_qs
 
-client = anthropic.Anthropic(base_url="https://ollama-api.nodemixaholic.com/v1", api_key="x")
+client = OpenAI(base_url="https://ollama-api.nodemixaholic.com/v1", api_key="x")
 
 RED = '\033[91m'
 GREEN = '\033[92m'
@@ -191,18 +191,18 @@ def simulate_web_request(req):
 	all_messages = context_messages + [current_request]
 
 	try:
-		response = client.messages.create(
+		response = client.chat.completions.create(
 			model="sparksammy/tinysam-l3.2-v2:latest",
 			max_tokens=8192,
 			messages=all_messages,
 			system=FULL_SYSTEM_PROMPT
 		)
-		simulated_content = response.content[0].text
+		simulated_content = response.choices[0].message.content
 
 		# Estimate request cost
 		total_content_length = sum(len(msg['content']) for msg in all_messages) + len(FULL_SYSTEM_PROMPT)
-		input_cost = total_content_length / 4 * 0.000003
-		output_cost = len(simulated_content)/4 * 0.000015
+		input_cost = 0
+		output_cost = 0
 		total_spend += input_cost + output_cost
 		print(f"Estimated cost for request: ${format_cost(round(input_cost + output_cost, 4))}")
 		print(f"Estimated total spend this session: ${format_cost(round(total_spend, 4))}")
