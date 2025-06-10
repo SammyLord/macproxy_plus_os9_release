@@ -1,4 +1,4 @@
-WEB_SIMULATOR_PROMPT_ADDENDUM = ""
+WEB_SIMULATOR_PROMPT_ADDENDUM=""
 WHITELISTED_DOMAINS = [
 	"weather.gov",
 	"notyoutube.com",
@@ -11,9 +11,10 @@ WHITELISTED_DOMAINS = [
 	"osn.nodemixaholic.com",
 	"www.macintoshrepository.org",
 	"ai.nodemixaholic.com",
-	"youtube.com"
+	"youtube.com",
+    "websimulator.ai"
 ]
-ZIP_CODE = 77705
+ZIP_CODE = 75602
 ENABLED_EXTENSIONS = [
 	"waybackmachine",
 	"reddit",
