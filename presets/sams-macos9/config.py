@@ -9,10 +9,10 @@ WHITELISTED_DOMAINS = [
 	"wikipedia.org",
 	"osn.nodemixaholic.com",
 	"www.macintoshrepository.org",
-    "ai.nodemixaholic.com",
-    "youtube.com"
+	"ai.nodemixaholic.com",
+	"youtube.com"
 ]
-ZIP_CODE = 75602
+ZIP_CODE = 77705
 ENABLED_EXTENSIONS = [
 	"waybackmachine",
 	"reddit",
@@ -21,9 +21,9 @@ ENABLED_EXTENSIONS = [
 	"npr",
 	"notyoutube-os9",
 	"wikipedia",
-    "samantha",
-    "yeahyoutube",
-    "samantha-websimulator"
+	"samantha",
+	"yeahyoutube",
+	"samantha-websimulator"
 ]
 SIMPLIFY_HTML=True
 TAGS_TO_UNWRAP=["h1","h2","h3","h4","h5","h6",'b','p','i',"em","strong"]
