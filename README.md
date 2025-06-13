@@ -91,7 +91,7 @@ Enter any date between January 1st, 1996 and today, then browse the web as it ex
 Type a URL that doesn't exist into the address bar, and Anthropic's Claude 3.5 Sonnet will interpret the domain and any query parameters to generate an imagined version of that page on the fly. Each HTTP request is serialized and sent to the AI, along with the full HTML of the last 3 pages you visited, allowing you to explore a vast, interconnected, alternate reality Internet where the only limit is your imagination.
 
 #### (not) YouTube
-A legally distinct parody of YouTube, which uses the fantastic homebrew application <a href="https://www.macflim.com/macflim2/">MacFlim</a> (created by Fred Stark) or ffmpeg for the OS 9 versionß to encode video files as a series of dithered black and white frames.
+A legally distinct parody of YouTube, which uses the fantastic homebrew application <a href="https://www.macflim.com/macflim2/">MacFlim</a> (created by Fred Stark) or ffmpeg for the OS 9 version to re-encode video files.
 
 #### Hackaday
 A pared-down, text-only version of hackaday.com, complete with articles, comments, and search functionality.
